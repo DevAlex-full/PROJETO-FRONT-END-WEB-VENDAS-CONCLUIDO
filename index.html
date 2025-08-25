@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LojaTech - Sua Loja Online</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">LojaTech</div>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>Produtos de Tecnologia com os Melhores Preços</h1>
+            <p>Encontre os melhores dispositivos eletrônicos e gadgets com preços imbatíveis.</p>
+            <a href="#produtos" class="btn">Ver Produtos</a>
+        </div>
+    </section>
+
+    <section class="products" id="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="./src/imagem/smartphone.png" alt="Smartphone XYZ">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Smartphone XYZ</h3>
+                        <div class="product-price">R$ 1.899,00</div>
+                        <p class="product-desc">Smartphone de última geração com tela AMOLED de 6.5", 128GB de
+                            armazenamento e 8GB de RAM.</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="./src/imagem/notbook-ultra.png" alt="Notebook Ultra">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Notebook Ultra</h3>
+                        <div class="product-price">R$ 4.299,00</div>
+                        <p class="product-desc">Notebook com processador de última geração, 16GB de RAM e SSD de 512GB
+                            para máxima produtividade.</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="./src/imagem/fone-bluetooth.png" alt="Fone Bluetooth">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Fone Bluetooth</h3>
+                        <div class="product-price">R$ 299,00</div>
+                        <p class="product-desc">Fones de ouvido sem fio com cancelamento de ruído e bateria de longa
+                            duração.</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="./src/imagem/smart-wath.png" alt="Smart Watch">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Smart Watch</h3>
+                        <div class="product-price">R$ 599,00</div>
+                        <p class="product-desc">Relógio inteligente com monitoramento de saúde, notificações e
+                            resistência à água.</p>
+                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="sobre">
+        <div class="container">
+            <h2>Por que escolher a LojaTech?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Entregas em até 48 horas para todo o Brasil com rastreamento em tempo real.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>Melhor Preço</h3>
+                    <p>Garantimos o melhor preço do mercado. Encontrou mais barato? Devolvemos a diferença!</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Compra Segura</h3>
+                    <p>Site com certificado de segurança e pagamentos processados com criptografia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Trabalhe Conosco</a>
+            </div>
+            <p>&copy; 2025 LojaTech - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
